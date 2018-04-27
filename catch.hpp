@@ -9238,7 +9238,7 @@ namespace Catch {
             // the return value to 255 prevents false negative when some multiple
             // of 256 tests has failed
             //return (std::min)( { MaxExitCode, totals.error, static_cast<int>( totals.assertions.failed ) } );
-			return (std::min)( MaxExitCode, (std::max) (total.erro, static_cast<int>(total.assertions.failed)) );
+			return (std::min)( MaxExitCode, (std::max) (total.error, static_cast<int>(total.assertions.failed)) );
         }
         catch( std::exception& ex ) {
             Catch::cerr() << ex.what() << std::endl;
