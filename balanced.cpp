@@ -17,7 +17,7 @@ bool isBalanced(const std::string &text){
     case '{':
     case '(':
       unmatched.push(c);
-      break;
+      break;   //lit boi
     case ']':
       if(unmatched.empty() || unmatched.top() != '['){
         return false;
